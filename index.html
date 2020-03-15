@@ -2,137 +2,153 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link
-        href="https://fonts.googleapis.com/css?family=Imprima&display=swap"
-        rel="stylesheet"
-      />
-    </head>
-    <body>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-        <div class="container">
-            <header class="main-pizza"><h1 id="title">ultimate pizza survey</h1></header>
-            <p id="description">
-              in search of the nation's best style of pizza!
-            </p>
-            <form id="survey-form">
-              <div class="form-group">
-                  <label for="name" id="name-label">name</label>
-              <input id="name" class="form-control" type="text" name="name" placeholder="Enter Your Name" required=""></input>
-              <br>
-            
-      
-            
-      
-                <label for="email" id="email-label">email</label>
-             <input id="email" class="form-control" type="email" name="email" placeholder="Enter Your Email" required=""></input>
-             <br>
-      
-                
-                 <label for="number" id="number-label">age</label>
-             <input id="number" class="form-control" type="number" name="age" min="14" max="99" placeholder="Age" required=""></input>
-             <br>
-              </div>
-      
-              <hr>
-      
-              <div class="form-group">
-                <p class="p-style">your favorite style of crust?</p>
-                <select id="dropdown" name="dropdown" class="form-control" required="" >
-                  <option disabled="" selected="" value="">Select An Option</option>
-                  <option value="thin crust">Thin Crust</option>
-                  <option value="deep dish">Deep Dish</option>
-                  <option value="detroit style">Detroit Style</option>
-                  <option value="regular pan">Regular Pan</option>
-                </select>
-              
-      
-          
-      
-              
-                <p class="p-style">your least favorite style of crust?</p>
-                <select id="dropdown" name="dropdown" class="form-control" required="" >
-                  <option disabled="" selected="" value="">Select An Option</option>
-                  <option value="thin crust">Thin Crust</option>
-                  <option value="deep dish">Deep Dish</option>
-                  <option value="detroit style">Detroit Style</option>
-                  <option value="regular pan">Regular Pan</option>
-                </select>
-              </div>
-      
-              <hr>
-      
-              <div class="form-group">
-                <p>favorite toppings <em>(check all that applies)</em></p>
-                <label class="checks">
-                  <input type="checkbox" name="favorite" class="input-checkbox" value="sausage"><div class="topping" id="sausage"></div>sausage
-                </label>
-                <label class="checks">
-                  <input type="checkbox" name="favorite" class="input-checkbox" value="pepperoni"><div class="topping" id="roni"></div>pepperoni
-                </label>
-                <label class="checks">
-                  <input type="checkbox" name="favorite" class="input-checkbox" value="onions"><div class="topping" id="onion"></div>onions
-                </label>
-                <label class="checks">
-                  <input type="checkbox" name="favorite" class="input-checkbox" value="mushrooms"><div class="topping" id="mush"></div>mushrooms
-                </label>
-                <label class="checks">
-                  <input type="checkbox" name="favorite" class="input-checkbox" value="green peppers"><div class="topping" id="pepper"></div>green peppers
-                </label>
-                <label class="checks">
-                  <input type="checkbox" name="favorite" class="input-checkbox" value="olives"><div class="topping" id="olive"></div>olives
-                </label>
-                <label class="checks">
-                  <input type="checkbox" name="favorite" class="input-checkbox" value="pinneaple"><div class="topping" id="pine"></div>pinneaple
-                </label>
-                <label class="checks">
-                  <input type="checkbox" name="favorite" class="input-checkbox" value="jalapenos"><div class="topping" id="jala"></div>jalapenos
-                </label>
-                <label class="checks">
-                  <input type="checkbox" name="favorite" class="input-checkbox" value="bacon"><div class="topping" id="bacon"></div>bacon
-                </label>
-              </div>
-      
-              <hr>
-      
-              <div class="form-group">
-                <p class="p-style">which style of toppings do you prefer?</p>
-                <label class="checks">
-                  <input type="radio" class="input-radio" name="prefer" value="only cheese" checked="">only cheese
-                </label>
-                <label class="checks">
-                  <input type="radio" class="input-radio" name="prefer" value="all meat" checked="">all meat
-                </label>
-                <label class="checks">
-                  <input type="radio" class="input-radio" name="prefer" value="vegetarian checked="">vegetarian
-                </label>
-                <label class="checks">
-                  <input type="radio" class="input-radio" name="prefer" value="meat veggie combo" checked="">meat veggie combo
-                </label>
-              </div>
-      
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Imprima&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="main-pizza">
+      <h1 id="title">ultimate pizza survey</h1>
+    </header>
+    <p id="description">
+      in search of the nation's best style of pizza!
+    </p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">name</label>
+        <input id="name" class="form-control" type="text" name="name" placeholder="Enter Your Name" required=""></input>
+        <br>
+
+
+
+
+        <label for="email" id="email-label">email</label>
+        <input id="email" class="form-control" type="email" name="email" placeholder="Enter Your Email"
+          required=""></input>
+        <br>
+
+
+        <label for="number" id="number-label">age</label>
+        <input id="number" class="form-control" type="number" name="age" min="14" max="99" placeholder="Age"
+          required=""></input>
+        <br>
+      </div>
+
       <hr>
-      
-              <div class="form-group">
-                <p class="p-style">tell us where and when did you have your best pizza experience?!</p>
-                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter Your Comments Here..."></textarea>
-              </div>
-      
-              <button id="submit" type="submit" class="submit-button">Submit</button>
-      
-            </form>
-          </div>
-        <!--[if lt IE 7]>
+
+      <div class="form-group">
+        <p class="p-style">your favorite style of crust?</p>
+        <select id="dropdown" name="dropdown" class="form-control" required="">
+          <option disabled="" selected="" value="">Select An Option</option>
+          <option value="thin crust">Thin Crust</option>
+          <option value="deep dish">Deep Dish</option>
+          <option value="detroit style">Detroit Style</option>
+          <option value="regular pan">Regular Pan</option>
+        </select>
+
+
+
+
+
+        <p class="p-style">your least favorite style of crust?</p>
+        <select id="dropdown" name="dropdown" class="form-control" required="">
+          <option disabled="" selected="" value="">Select An Option</option>
+          <option value="thin crust">Thin Crust</option>
+          <option value="deep dish">Deep Dish</option>
+          <option value="detroit style">Detroit Style</option>
+          <option value="regular pan">Regular Pan</option>
+        </select>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <p>favorite toppings <em>(check all that applies)</em></p>
+        <label class="checks">
+          <input type="checkbox" name="favorite" class="input-checkbox" value="sausage">
+          <div class="topping" id="sausage"></div>sausage
+        </label>
+        <label class="checks">
+          <input type="checkbox" name="favorite" class="input-checkbox" value="pepperoni">
+          <div class="topping" id="roni"></div>pepperoni
+        </label>
+        <label class="checks">
+          <input type="checkbox" name="favorite" class="input-checkbox" value="onions">
+          <div class="topping" id="onion"></div>onions
+        </label>
+        <label class="checks">
+          <input type="checkbox" name="favorite" class="input-checkbox" value="mushrooms">
+          <div class="topping" id="mush"></div>mushrooms
+        </label>
+        <label class="checks">
+          <input type="checkbox" name="favorite" class="input-checkbox" value="green peppers">
+          <div class="topping" id="pepper"></div>green peppers
+        </label>
+        <label class="checks">
+          <input type="checkbox" name="favorite" class="input-checkbox" value="olives">
+          <div class="topping" id="olive"></div>olives
+        </label>
+        <label class="checks">
+          <input type="checkbox" name="favorite" class="input-checkbox" value="pinneaple">
+          <div class="topping" id="pine"></div>pinneaple
+        </label>
+        <label class="checks">
+          <input type="checkbox" name="favorite" class="input-checkbox" value="jalapenos">
+          <div class="topping" id="jala"></div>jalapenos
+        </label>
+        <label class="checks">
+          <input type="checkbox" name="favorite" class="input-checkbox" value="bacon">
+          <div class="topping" id="bacon"></div>bacon
+        </label>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <p class="p-style">which style of toppings do you prefer?</p>
+        <label class="checks">
+          <input type="radio" class="input-radio" name="prefer" value="only cheese" checked="">only cheese
+        </label>
+        <label class="checks">
+          <input type="radio" class="input-radio" name="prefer" value="all meat" checked="">all meat
+        </label>
+        <label class="checks">
+          <input type="radio" class="input-radio" name="prefer" value="vegetarian checked="">vegetarian
+                </label>
+                <label class=" checks">
+          <input type="radio" class="input-radio" name="prefer" value="meat veggie combo" checked="">meat veggie combo
+        </label>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <p class="p-style">tell us where and when did you have your best pizza experience?!</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Enter Your Comments Here..."></textarea>
+      </div>
+
+      <button id="submit" type="submit" class="submit-button">Submit</button>
+
+    </form>
+  </div>
+  <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+
+  <script src="" async defer></script>
+</body>
+
 </html>
