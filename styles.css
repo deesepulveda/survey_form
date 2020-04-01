@@ -14,7 +14,24 @@ body {
 hr {
   margin: 10px 20px;
   max-width: 1360px;
+}
+
+#description,
+.form-group,
+.main-pizza,
+.submit-button {
   border-radius: 10px;
+}
+
+#your-info,
+#description,
+.p-style {
+  font-weight: bold;
+}
+
+#description,
+.submit-button {
+  background-color: rgba(245, 46, 46, 0.9);
 }
 
 /*==============================================================*/
@@ -35,24 +52,23 @@ hr {
 #title {
   color: whitesmoke;
   text-shadow: 2px 2px 2px rgb(245, 46, 46);
-  letter-spacing: 3px;
-  word-spacing: 5px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
 }
 
 /*==============================================================*/
 /*====================DESCRIPTION STYLING=======================*/
 
 #description {
-  background-color: rgba(245, 46, 46, 0.9);
-  font-size: 15px;
-  padding: 5px 10px;
+  font-size: 18px;
+  padding: 10px;
 }
 
 /*==============================================================*/
 /*=========================FORM STYLING=========================*/
 
 .form-group {
-  padding: 10px;
+  padding: 20px 10px;
   background-color: rgba(42, 148, 68, 0.9);
 }
 
@@ -75,7 +91,7 @@ input[type="number"] {
 /*=============DROPDOWN SECTION============*/
 
 .p-style {
-  margin: 20px 0 0;
+  margin: 0 0 15px;
 }
 
 #dropdown {
@@ -149,29 +165,32 @@ input[type="number"] {
 /*============TEXT-AREA SECTION============*/
 
 .input-textarea {
-  max-width: 780px;
+  width: 100%;
   min-height: 100px;
   resize: vertical;
+  margin-right: 50px;
 }
 
 /*============SUBMIT BTN SECTION===========*/
 
-#submit {
-  width: 100px;
-  height: 40px;
-}
 .submit-button {
+  width: 150px;
+  height: 60px;
+  margin: 10px 0 40px;
   padding: 5px 10px;
-  font-size: 20px;
+  font-size: 28px;
+  color: whitesmoke;
+  border: rgba(245, 46, 46, 0.9);
 }
 
 .submit-button:hover {
   cursor: pointer;
-  border: 2px solid rgba(245, 46, 46, 0.9);
+  background-color: rgba(11, 78, 31, 0.9);
+  border: 2px solid rgba(11, 78, 31, 0.9);
 }
 
-/*==============================================================*/
-/*===========================HR STYLING=========================*/
+/*===============================================================*/
+/*===========================HR STYLING==========================*/
 
 hr {
   border: 2px solid rgb(201, 36, 36);
