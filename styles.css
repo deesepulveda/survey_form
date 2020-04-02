@@ -12,8 +12,8 @@ body {
 .form-group,
 .main-pizza,
 hr {
-  margin: 10px 20px;
-  max-width: 1360px;
+  margin: 10px auto;
+  max-width: 1100px;
 }
 
 #description,
@@ -21,6 +21,7 @@ hr {
 .main-pizza,
 .submit-button {
   border-radius: 10px;
+  border: 2px solid black;
 }
 
 #your-info,
@@ -61,23 +62,32 @@ hr {
 
 #description {
   font-size: 18px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 /*==============================================================*/
 /*=========================FORM STYLING=========================*/
 
 .form-group {
-  padding: 20px 10px;
+  padding: 20px;
   background-color: rgba(42, 148, 68, 0.9);
 }
 
 /*============YOUR INFO SECTION============*/
 
+#name-label,
+#email-label,
+#number-label,
 input[type="text"],
 input[type="email"],
 input[type="number"] {
-  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
   margin-bottom: 5px;
 }
 
@@ -85,13 +95,13 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding: 20px 10px;
 }
 
 /*=============DROPDOWN SECTION============*/
 
 .p-style {
   margin: 0 0 15px;
+  text-decoration: underline;
 }
 
 #dropdown {
@@ -120,8 +130,7 @@ input[type="number"] {
 #pepper,
 #olive,
 #pine,
-#jala,
-#bacon {
+#jala {
   background-size: 100px;
   background-position: center;
 }
@@ -158,17 +167,12 @@ input[type="number"] {
   background-image: url(images/image9.jpg);
 }
 
-#bacon {
-  background-image: url(images/image10.jpg);
-}
-
 /*============TEXT-AREA SECTION============*/
 
 .input-textarea {
   width: 100%;
   min-height: 100px;
   resize: vertical;
-  margin-right: 50px;
 }
 
 /*============SUBMIT BTN SECTION===========*/
@@ -197,19 +201,112 @@ hr {
 }
 
 /*==================================================================*/
-/*==================MEDIA QUERY / MIN-WIDTH 480 PX==================*/
+/*==================MEDIA QUERY / MIN-WIDTH 460 PX==================*/
+
+@media screen and (min-width: 460px) {
+  .main-pizza {
+    background-size: 500px;
+  }
+
+  #dropdown {
+    width: 300px;
+  }
+
+  .tops {
+    width: 180px;
+    margin: 0 auto;
+  }
+}
 
 /*==================================================================*/
 /*==================MEDIA QUERY / MIN-WIDTH 600 PX==================*/
 
+@media screen and (min-width: 600px) {
+  .main-pizza {
+    background-size: 660px;
+  }
+
+  #title {
+    letter-spacing: 4px;
+    word-spacing: 5px;
+    font-size: 36px;
+  }
+}
+
 /*==================================================================*/
 /*==================MEDIA QUERY / MIN-WIDTH 720 PX==================*/
 
+@media screen and (min-width: 720px) {
+  .main-pizza {
+    background-size: 760px;
+  }
+
+  #title {
+    font-size: 42px;
+  }
+
+  #description {
+    font-size: 22px;
+    padding: 20px 10px;
+  }
+
+  #description,
+  .main-pizza,
+  .form-group {
+    padding: 30px 20px;
+  }
+}
+
 /*===================================================================*/
 /*==================MEDIA QUERY / MIN-WIDTH 900 PX===================*/
+@media screen and (min-width: 900px) {
+  .main-pizza {
+    background-size: 980px;
+    height: 200px;
+  }
+
+  #your-info,
+  .p-style {
+    font-size: 20px;
+  }
+
+  #title {
+    font-size: 55px;
+  }
+
+  #description {
+    font-size: 30px;
+  }
+
+  #dropdown {
+    width: 400px;
+    height: 25px;
+    margin-bottom: 25px;
+  }
+
+  .submit-button {
+    margin: 10px 0 80px;
+  }
+}
 
 /*===================================================================*/
 /*=================MEDIA QUERY / MIN-WIDTH 1200 PX===================*/
+@media screen and (min-width: 1200px) {
+  .main-pizza {
+    background-size: 1280px;
+    height: 200px;
+  }
+
+  #title {
+    font-size: 70px;
+    letter-spacing: 6px;
+    word-spacing: 10px;
+  }
+
+  #description {
+    font-size: 40px;
+  }
+}
 
 /*===================================================================*/
 /*=================MEDIA QUERY / MIN-WIDTH 1360 PX===================*/

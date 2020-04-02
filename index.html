@@ -26,18 +26,22 @@
     
   <main>  
     <form id="survey-form">
-      <div class="form-group" id="your-info">
-        <label for="name" id="name-label">name</label>
-        <input id="name" class="form-control" type="text" name="name" placeholder="Enter Your Name" required=""></input>
-        
-        <label for="email" id="email-label">email</label>
-        <input id="email" class="form-control" type="email" name="email" placeholder="Enter Your Email"
-          required=""></input>
+     
+        <div class="form-group" id="your-info">
+          
+            <label for="name" id="name-label">name</label>
+            <input id="name" class="form-control" type="text" name="name" placeholder="Enter Your Name" required=""></input>
+            
+            <label for="email" id="email-label">email</label>
+            <input id="email" class="form-control" type="email" name="email" placeholder="Enter Your Email"
+              required=""></input>
+          
+            <label for="number" id="number-label">age</label>
+            <input id="number" class="form-control" type="number" name="age" min="14" max="99" placeholder="Age"
+              required=""></input>
+          
+        </div>
       
-        <label for="number" id="number-label">age</label>
-        <input id="number" class="form-control" type="number" name="age" min="14" max="99" placeholder="Age"
-          required=""></input>
-      </div>
 
       <hr>
 
@@ -65,60 +69,60 @@
 
       <div class="form-group">
         <p class="p-style">favorite toppings <em>(check all that applies)</em></p>
-        <label class="checks">
-          <input type="checkbox" name="favorite" class="input-checkbox" value="sausage">
-          <div class="topping" id="sausage"></div>sausage
-        </label>
-        <label class="checks">
-          <input type="checkbox" name="favorite" class="input-checkbox" value="pepperoni">
-          <div class="topping" id="roni"></div>pepperoni
-        </label>
-        <label class="checks">
-          <input type="checkbox" name="favorite" class="input-checkbox" value="onions">
-          <div class="topping" id="onion"></div>onions
-        </label>
-        <label class="checks">
-          <input type="checkbox" name="favorite" class="input-checkbox" value="mushrooms">
-          <div class="topping" id="mush"></div>mushrooms
-        </label>
-        <label class="checks">
-          <input type="checkbox" name="favorite" class="input-checkbox" value="green peppers">
-          <div class="topping" id="pepper"></div>green peppers
-        </label>
-        <label class="checks">
-          <input type="checkbox" name="favorite" class="input-checkbox" value="olives">
-          <div class="topping" id="olive"></div>olives
-        </label>
-        <label class="checks">
-          <input type="checkbox" name="favorite" class="input-checkbox" value="pinneaple">
-          <div class="topping" id="pine"></div>pinneaple
-        </label>
-        <label class="checks">
-          <input type="checkbox" name="favorite" class="input-checkbox" value="jalapenos">
-          <div class="topping" id="jala"></div>jalapenos
-        </label>
-        <label class="checks">
-          <input type="checkbox" name="favorite" class="input-checkbox" value="bacon">
-          <div class="topping" id="bacon"></div>bacon
-        </label>
+        <div class="tops">
+          <label class="checks">
+            <input type="checkbox" name="favorite" class="input-checkbox" value="sausage">
+            <div class="topping" id="sausage"></div>sausage
+          </label>
+          <label class="checks">
+            <input type="checkbox" name="favorite" class="input-checkbox" value="pepperoni">
+            <div class="topping" id="roni"></div>pepperoni
+          </label>
+          <label class="checks">
+            <input type="checkbox" name="favorite" class="input-checkbox" value="onions">
+            <div class="topping" id="onion"></div>onions
+          </label>
+          <label class="checks">
+            <input type="checkbox" name="favorite" class="input-checkbox" value="mushrooms">
+            <div class="topping" id="mush"></div>mushrooms
+          </label>
+          <label class="checks">
+            <input type="checkbox" name="favorite" class="input-checkbox" value="green peppers">
+            <div class="topping" id="pepper"></div>green peppers
+          </label>
+          <label class="checks">
+            <input type="checkbox" name="favorite" class="input-checkbox" value="olives">
+            <div class="topping" id="olive"></div>olives
+          </label>
+          <label class="checks">
+            <input type="checkbox" name="favorite" class="input-checkbox" value="pinneaple">
+            <div class="topping" id="pine"></div>pinneaple
+          </label>
+          <label class="checks">
+            <input type="checkbox" name="favorite" class="input-checkbox" value="jalapenos">
+            <div class="topping" id="jala"></div>jalapenos
+          </label>
+      </div>
       </div>
 
       <hr>
 
       <div class="form-group">
         <p class="p-style">which style of toppings do you prefer?</p>
-          <label class="checks">
-            <input type="radio" class="input-radio" name="prefer" value="only cheese" checked="">only cheese
-          </label>
-          <label class="checks">
-            <input type="radio" class="input-radio" name="prefer" value="all meat" checked="">all meat
-          </label>
-          <label class="checks">
-            <input type="radio" class="input-radio" name="prefer" value="vegetarian checked="">vegetarian
-          </label>
-          <label class=" checks">
-            <input type="radio" class="input-radio" name="prefer" value="meat veggie combo" checked="">meat veggie combo
-          </label>
+          <div class="tops">
+            <label class="checks">
+              <input type="radio" class="input-radio" name="prefer" value="only cheese" checked="">only cheese
+            </label>
+            <label class="checks">
+              <input type="radio" class="input-radio" name="prefer" value="all meat" checked="">all meat
+            </label>
+            <label class="checks">
+              <input type="radio" class="input-radio" name="prefer" value="vegetarian checked="">vegetarian
+            </label>
+            <label class=" checks">
+              <input type="radio" class="input-radio" name="prefer" value="meat veggie combo" checked="">meat veggie combo
+            </label>
+          </div>
       </div>
 
       <hr>
