@@ -81,7 +81,7 @@ hr {
 input[type="text"],
 input[type="email"],
 input[type="number"] {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -119,8 +119,7 @@ input[type="number"] {
 .topping {
   width: 40px;
   height: 20px;
-  margin-top: 2px;
-  margin-right: 5px;
+  margin: 2px 5px 0 0;
 }
 
 #sausage,
@@ -170,7 +169,7 @@ input[type="number"] {
 /*============TEXT-AREA SECTION============*/
 
 .input-textarea {
-  width: 100%;
+  width: 80%;
   min-height: 100px;
   resize: vertical;
 }
@@ -294,7 +293,6 @@ hr {
 @media screen and (min-width: 1200px) {
   .main-pizza {
     background-size: 1280px;
-    height: 200px;
   }
 
   #title {
@@ -310,6 +308,10 @@ hr {
 
 /*===================================================================*/
 /*=================MEDIA QUERY / MIN-WIDTH 1360 PX===================*/
-
+@media screen and (min-width: 1360px) {
+  #dropdown {
+    width: 600px;
+  }
+}
 /*===================================================================*/
 /*===================================================================*/
