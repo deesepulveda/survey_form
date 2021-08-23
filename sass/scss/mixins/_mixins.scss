@@ -1,0 +1,116 @@
+//------ ABSOLUTE POSITION STYLES ------
+
+@mixin absol-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+@mixin absol-topLeftZero {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+//------ DISPLAY FLEX STYLES ------
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex-start-col {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@mixin flex-spaceEvenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin flex-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+//------ STICKY POSITION STYLES ------
+
+@mixin sticky-position {
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+//------ WIDTH/HEIGHT MIXINS ------
+
+@mixin keep-it-hundo {
+  width: 100%;
+  height: 100%;
+}
+
+//------ SHADOW MIXINS ------
+
+@mixin shadow {
+  box-shadow: 0.2rem 0.2rem 0.2rem #868080c2;
+}
+
+@mixin deep-shadow {
+  box-shadow: 0 0.7rem 5rem $primary-color;
+}
+
+@mixin text-shadow {
+  text-shadow: 0.2rem 0.2rem 0.3rem #585555e1;
+}
+
+@mixin text-shadow-lite {
+  text-shadow: 0.05rem 0.05rem 0.1rem #585555e1;
+}
+
+//------ TRANSITION MIXINS ------
+
+@mixin transit2 {
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+}
+
+@mixin transit3 {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+@mixin transit4 {
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
