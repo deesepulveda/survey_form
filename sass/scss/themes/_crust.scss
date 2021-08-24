@@ -1,0 +1,75 @@
+.crust-section {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 80%;
+    height: 100%;
+    @include absol-center;
+    border-bottom: 0.2rem dotted $secondary-color;
+    z-index: -1;
+  }
+
+  .crust-option {
+    padding: 2rem;
+    @include keep-it-hundo;
+    @include absol-topLeftZero;
+    // @include flex-center-col;
+    z-index: 3;
+
+    .favorite,
+    .least {
+      height: calc(100% / 2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .favorite {
+      width: 100%;
+      //   border: 1px solid blue;
+
+      .favorite-title {
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+      }
+
+      #dropdown {
+        width: 70%;
+        height: 2.5rem;
+        background: transparent;
+        border: 0.1rem solid $secondary-color;
+      }
+    }
+
+    .least {
+      width: 100%;
+      //   border: 1px solid green;
+
+      .least-title {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+      }
+
+      #dropdown {
+        width: 70%;
+        height: 2.5rem;
+        background: transparent;
+        border: 0.1rem solid $secondary-color;
+      }
+    }
+  }
+
+  .crust-img-box {
+    @include keep-it-hundo;
+
+    .crust-img {
+      @include keep-it-hundo;
+      object-fit: contain;
+      opacity: 0.3;
+    }
+  }
+}
