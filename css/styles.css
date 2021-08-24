@@ -263,4 +263,80 @@ body {
     font-size: 3.1rem;
   }
 }
+
+.name-section {
+  height: 30vh;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .name-section {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .name-section {
+    font-size: 3.2rem;
+  }
+}
+
+.name-section label {
+  margin-right: 0.5rem;
+}
+
+.name-section input {
+  width: 21rem;
+  height: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+@media only screen and (min-width: 620px) {
+  .name-section input {
+    width: 28rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .name-section input {
+    width: 32rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .name-section input {
+    width: 35rem;
+    height: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  .name-section input {
+    width: 40rem;
+  }
+}
+
+.main {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  height: auto;
+  border: 1px solid #24ad12;
+}
+
+.main form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,58 @@
+.name-section {
+  height: 30vh;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2.5rem;
+
+  @include tabletPortrait {
+    & {
+      font-size: 3rem;
+    }
+  }
+
+  @include tabletLandscapeXL {
+    & {
+      font-size: 3.2rem;
+    }
+  }
+
+  label {
+    margin-right: 0.5rem;
+  }
+
+  input {
+    width: 21rem;
+    height: 2.5rem;
+    margin-bottom: 1.2rem;
+
+    @include phoneLandscape {
+      & {
+        width: 28rem;
+      }
+    }
+
+    @include tabletPortrait {
+      & {
+        width: 32rem;
+        height: 3rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    @include tabletLandscapeXL {
+      & {
+        width: 35rem;
+        height: 3.2rem;
+      }
+    }
+
+    @include largeDesktop {
+      & {
+        width: 40rem;
+      }
+    }
+  }
+}
