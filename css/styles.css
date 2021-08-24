@@ -179,6 +179,7 @@ body {
 }
 
 .header-main .title span {
+  width: 100%;
   margin: 0 1rem;
   background: linear-gradient(to bottom, red 60%, green 40%);
   background-clip: text;
