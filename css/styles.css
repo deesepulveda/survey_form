@@ -489,7 +489,6 @@ body {
   width: 100%;
   height: 35rem;
   position: relative;
-  border: 2px solid red;
 }
 
 .toppings-section .check-container {
@@ -506,13 +505,41 @@ body {
   z-index: 3;
 }
 
+@media only screen and (min-width: 1024px) {
+  .toppings-section .check-container {
+    width: calc(100% / 2);
+    padding-right: 3rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}
+
 .toppings-section .check-container .toppings-title {
   margin-bottom: 1rem;
   font-size: 2.2rem;
 }
 
+@media only screen and (min-width: 480px) {
+  .toppings-section .check-container .toppings-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .toppings-section .check-container .toppings-title {
+    font-size: 3rem;
+  }
+}
+
 .toppings-section .check-container .toppings-title em {
   font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .toppings-section .check-container .toppings-title em {
+    font-size: 1.75rem;
+  }
 }
 
 .toppings-section .check-container .check-wrapper {
@@ -524,7 +551,8 @@ body {
 }
 
 .toppings-section .check-container .check-wrapper .group {
-  width: calc(100% / 2 - 5%);
+  width: auto;
+  margin-right: 1rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -532,8 +560,26 @@ body {
   align-items: flex-start;
 }
 
+@media only screen and (min-width: 768px) {
+  .toppings-section .check-container .check-wrapper .group {
+    font-size: 2.5rem;
+  }
+}
+
 .toppings-section .check-container .check-wrapper .group label {
   font-size: 1.75rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .toppings-section .check-container .check-wrapper .group label {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 834px) {
+  .toppings-section .check-container .check-wrapper .group label {
+    font-size: 2.25rem;
+  }
 }
 
 .toppings-section .ingredients-img-box {
@@ -542,11 +588,27 @@ body {
   padding: 2rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .toppings-section .ingredients-img-box {
+    width: calc(100% / 2);
+    padding-left: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .toppings-section .ingredients-img-box .ingredients-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   opacity: 0.3;
+}
+
+@media only screen and (min-width: 1024px) {
+  .toppings-section .ingredients-img-box .ingredients-img {
+    opacity: 1;
+  }
 }
 
 .main {
@@ -566,11 +628,17 @@ body {
   flex-direction: column;
 }
 
+.main form hr {
+  width: 80%;
+  height: 0.15rem;
+  border: none;
+  border-bottom: 0.2rem dotted #050505;
+}
+
 .toppings-section {
   width: 100%;
   height: 35rem;
   position: relative;
-  border: 2px solid red;
 }
 
 .toppings-section .check-container {
@@ -587,13 +655,41 @@ body {
   z-index: 3;
 }
 
+@media only screen and (min-width: 1024px) {
+  .toppings-section .check-container {
+    width: calc(100% / 2);
+    padding-right: 3rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}
+
 .toppings-section .check-container .toppings-title {
   margin-bottom: 1rem;
   font-size: 2.2rem;
 }
 
+@media only screen and (min-width: 480px) {
+  .toppings-section .check-container .toppings-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .toppings-section .check-container .toppings-title {
+    font-size: 3rem;
+  }
+}
+
 .toppings-section .check-container .toppings-title em {
   font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .toppings-section .check-container .toppings-title em {
+    font-size: 1.75rem;
+  }
 }
 
 .toppings-section .check-container .check-wrapper {
@@ -605,7 +701,8 @@ body {
 }
 
 .toppings-section .check-container .check-wrapper .group {
-  width: calc(100% / 2 - 5%);
+  width: auto;
+  margin-right: 1rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -613,8 +710,26 @@ body {
   align-items: flex-start;
 }
 
+@media only screen and (min-width: 768px) {
+  .toppings-section .check-container .check-wrapper .group {
+    font-size: 2.5rem;
+  }
+}
+
 .toppings-section .check-container .check-wrapper .group label {
   font-size: 1.75rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .toppings-section .check-container .check-wrapper .group label {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 834px) {
+  .toppings-section .check-container .check-wrapper .group label {
+    font-size: 2.25rem;
+  }
 }
 
 .toppings-section .ingredients-img-box {
@@ -623,10 +738,26 @@ body {
   padding: 2rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .toppings-section .ingredients-img-box {
+    width: calc(100% / 2);
+    padding-left: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .toppings-section .ingredients-img-box .ingredients-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   opacity: 0.3;
+}
+
+@media only screen and (min-width: 1024px) {
+  .toppings-section .ingredients-img-box .ingredients-img {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
