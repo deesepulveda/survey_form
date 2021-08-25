@@ -76,7 +76,7 @@
           <div class="crust-option">
             <div class="favorite">
               <h3 class="favorite-title">your favorite style of crust?</h3>
-              <select id="dropdown" name="dropdown" required="">
+              <select class="dropdown" name="dropdown" required="">
                 <option disabled="" selected="" value="">
                   Select An Option
                 </option>
@@ -88,7 +88,7 @@
             </div>
             <div class="least">
               <h3 class="least-title">your least favorite style of crust?</h3>
-              <select id="dropdown" name="dropdown" required="">
+              <select class="dropdown" name="dropdown" required="">
                 <option disabled="" selected="" value="">
                   Select An Option
                 </option>
@@ -107,68 +107,71 @@
             />
           </div>
         </div>
+        <!-- TOPPINGS SECTION -->
+        <div class="toppings-section">
+          <div class="check-container">
+            <h3 class="toppings-title">
+              favorite toppings <em>(check all that applies)</em>
+            </h3>
+            <div class="check-wrapper">
+              <!--  -->
+              <div class="group group1">
+                <!--  -->
+                <div class="checks">
+                  <input name="sausage" type="checkbox" checked="checked" />
+                  <label for="sausage">Sausage </label>
+                </div>
+                <!--  -->
+                <div class="checks">
+                  <input name="pepperoni" type="checkbox" />
+                  <label for="pepperoni">Pepperoni </label>
+                </div>
+                <!--  -->
+                <div class="checks">
+                  <input name="mushrooms" type="checkbox" />
+                  <label for="mushrooms">Mushrooms </label>
+                </div>
+                <!--  -->
+                <div class="checks">
+                  <input name="greenpeppers" type="checkbox" />
+                  <label for="greenpeppers">Green Peppers </label>
+                </div>
+              </div>
+              <!--  -->
+              <div class="group group2">
+                <!--  -->
+                <div class="checks">
+                  <input name="onions" type="checkbox" />
+                  <label for="onions">Onions </label>
+                </div>
+                <!--  -->
+                <div class="checks">
+                  <input name="olives" type="checkbox" />
+                  <label for="olives">Olives </label>
+                </div>
+                <!--  -->
+                <div class="checks">
+                  <input name="pinneaple" type="checkbox" />
+                  <label for="pinneaple">Pinneaple </label>
+                </div>
+                <!--  -->
+                <div class="checks">
+                  <input name="jalapenos" type="checkbox" />
+                  <label for="jalapenos">Jalapenos </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ingredients-img-box">
+            <img
+              src="/public/images/Ingredients.png"
+              alt=""
+              class="ingredients-img"
+            />
+          </div>
+        </div>
       </form>
     </main>
-
-    <!-- <div class="form-group">
-        <p class="p-style">your favorite style of crust?</p>
-          <select id="dropdown" name="dropdown" class="form-control" required="">
-            <option disabled="" selected="" value="">Select An Option</option>
-            <option value="thin crust">Thin Crust</option>
-            <option value="deep dish">Deep Dish</option>
-            <option value="detroit style">Detroit Style</option>
-            <option value="regular pan">Regular Pan</option>
-          </select>
-
-        <p class="p-style">your least favorite style of crust?</p>
-          <select id="dropdown" name="dropdown" class="form-control" required="">
-            <option disabled="" selected="" value="">Select An Option</option>
-            <option value="thin crust">Thin Crust</option>
-            <option value="deep dish">Deep Dish</option>
-            <option value="detroit style">Detroit Style</option>
-            <option value="regular pan">Regular Pan</option>
-          </select>
-      </div> -->
-
-    <!-- 
-
-      <div class="form-group">
-        <p class="p-style">favorite toppings <em>(check all that applies)</em></p>
-        <div class="tops">
-          <label class="checks">
-            <input type="checkbox" name="favorite" class="input-checkbox" value="sausage">
-            <div class="topping" id="sausage"></div>sausage
-          </label>
-          <label class="checks">
-            <input type="checkbox" name="favorite" class="input-checkbox" value="pepperoni">
-            <div class="topping" id="roni"></div>pepperoni
-          </label>
-          <label class="checks">
-            <input type="checkbox" name="favorite" class="input-checkbox" value="onions">
-            <div class="topping" id="onion"></div>onions
-          </label>
-          <label class="checks">
-            <input type="checkbox" name="favorite" class="input-checkbox" value="mushrooms">
-            <div class="topping" id="mush"></div>mushrooms
-          </label>
-          <label class="checks">
-            <input type="checkbox" name="favorite" class="input-checkbox" value="green peppers">
-            <div class="topping" id="pepper"></div>green peppers
-          </label>
-          <label class="checks">
-            <input type="checkbox" name="favorite" class="input-checkbox" value="olives">
-            <div class="topping" id="olive"></div>olives
-          </label>
-          <label class="checks">
-            <input type="checkbox" name="favorite" class="input-checkbox" value="pinneaple">
-            <div class="topping" id="pine"></div>pinneaple
-          </label>
-          <label class="checks">
-            <input type="checkbox" name="favorite" class="input-checkbox" value="jalapenos">
-            <div class="topping" id="jala"></div>jalapenos
-          </label>
-        </div>
-      </div> -->
 
     <!-- <div class="form-group">
         <p class="p-style">which style of toppings do you prefer?</p>

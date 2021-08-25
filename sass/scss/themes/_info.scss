@@ -8,15 +8,6 @@
   align-items: flex-end;
   font-size: 2.5rem;
 
-  &::after {
-    content: "";
-    width: 80%;
-    height: 100%;
-    @include absol-center;
-    border-bottom: 0.2rem dotted $secondary-color;
-    z-index: -1;
-  }
-
   @include tabletPortrait {
     & {
       font-size: 3rem;

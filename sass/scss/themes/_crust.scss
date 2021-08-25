@@ -1,31 +1,47 @@
 .crust-section {
   width: 100%;
-  height: 30rem;
+  height: 32rem;
   position: relative;
 
-  &::after {
-    content: "";
-    width: 80%;
-    height: 100%;
-    @include absol-center;
-    border-bottom: 0.2rem dotted $secondary-color;
-    z-index: -1;
+  @include tabletLandscape {
+    & {
+      padding: 1rem 2rem;
+      @include flex-center;
+    }
   }
 
   .crust-option {
     padding: 2rem;
     @include keep-it-hundo;
     @include absol-topLeftZero;
-    // @include flex-center-col;
     z-index: 3;
+    // border: 2px solid red;
+
+    @include tabletLandscape {
+      & {
+        width: calc(100% / 2);
+        position: static;
+        padding: 1rem 0 1rem 2rem;
+      }
+    }
+
+    @include tabletLandscapeXL {
+      & {
+        padding: 1rem 0 1rem 3rem;
+      }
+    }
 
     .favorite,
     .least {
       height: calc(100% / 2);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
+      @include flex-center-col;
+      // border: 1px solid red;
+
+      @include tabletLandscape {
+        & {
+          align-items: flex-start;
+        }
+      }
     }
 
     .favorite {
@@ -35,13 +51,37 @@
       .favorite-title {
         margin-bottom: 1rem;
         font-size: 2.2rem;
+
+        @include phonePortrait {
+          & {
+            font-size: 2.5rem;
+          }
+        }
+
+        @include tabletPortrait {
+          & {
+            font-size: 3rem;
+          }
+        }
       }
 
-      #dropdown {
+      .dropdown {
         width: 70%;
         height: 2.5rem;
         background: transparent;
         border: 0.1rem solid $secondary-color;
+
+        @include tabletPortrait {
+          & {
+            height: 3rem;
+          }
+        }
+
+        @include tabletLandscapeXL {
+          & {
+            height: 3.2rem;
+          }
+        }
       }
     }
 
@@ -52,24 +92,62 @@
       .least-title {
         margin-bottom: 1rem;
         font-size: 2rem;
+
+        @include phonePortrait {
+          & {
+            font-size: 2.5rem;
+          }
+        }
+
+        @include tabletPortrait {
+          & {
+            font-size: 3rem;
+          }
+        }
       }
 
-      #dropdown {
+      .dropdown {
         width: 70%;
         height: 2.5rem;
         background: transparent;
         border: 0.1rem solid $secondary-color;
+
+        @include tabletPortrait {
+          & {
+            height: 3rem;
+          }
+        }
+
+        @include tabletLandscapeXL {
+          & {
+            height: 3.2rem;
+          }
+        }
       }
     }
   }
 
   .crust-img-box {
     @include keep-it-hundo;
+    // border: 2px solid blue;
+
+    @include tabletLandscape {
+      & {
+        width: calc(100% / 2);
+        position: static;
+      }
+    }
 
     .crust-img {
       @include keep-it-hundo;
       object-fit: contain;
       opacity: 0.3;
+
+      @include tabletLandscape {
+        & {
+          opacity: 1;
+        }
+      }
     }
   }
 }
