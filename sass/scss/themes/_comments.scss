@@ -1,0 +1,75 @@
+.comment-section {
+  width: 100%;
+  height: 40rem;
+
+  .comment-container {
+    @include keep-it-hundo;
+    @include flex-center-col;
+
+    .comment-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+
+      @include phonePortrait {
+        & {
+          margin-bottom: 2rem;
+          padding: 0 2rem;
+        }
+      }
+
+      @include phoneLandscape {
+        & {
+          font-size: 2.25rem;
+        }
+      }
+
+      @include tabletPortrait {
+        & {
+          margin-bottom: 4rem;
+          padding: 0 4rem;
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .comment-box {
+      width: 70%;
+      height: 40%;
+
+      @include tabletLandscapeXL {
+        & {
+          width: 60%;
+        }
+      }
+
+      .textareas {
+        @include keep-it-hundo;
+        resize: none;
+        border: 0.1rem solid $secondary-color;
+      }
+    }
+
+    .btn-box {
+      width: 100%;
+      height: auto;
+      margin: 1rem auto;
+
+      button {
+        padding: 0.75rem 2rem;
+        font-size: 2rem;
+        font-family: $secondary-font;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 0.1rem solid $secondary-color;
+        cursor: pointer;
+        @include transit3;
+
+        &:hover {
+          background-color: $tertiary-color;
+          color: $primary-color;
+          border: none;
+        }
+      }
+    }
+  }
+}
